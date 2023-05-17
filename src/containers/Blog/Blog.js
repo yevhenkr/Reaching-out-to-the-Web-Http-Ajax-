@@ -17,11 +17,14 @@ class Blog extends Component {
                         </ul>
                     </nav>
                 </header>
-                <Routes>
+                {/* <Routes>
                     <Route path="/" exact element={<h1>Home</h1>} />
                 </Routes>
                 <Routes>
                     <Route path="/" exact element={<h1>Home 2</h1>} />
+                </Routes> */}
+                 <Routes>
+                    <Route path="/" exact Component={Posts} />
                 </Routes>
             </div>
         );
