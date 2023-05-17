@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import classes from './Blog.css';
-import Posts from './Posts/Posts'
+import Posts from './Posts/Posts';
+import NewPost from '../Blog/NewPost/NewPost';
 
 class Blog extends Component {
     render() {
@@ -25,6 +26,9 @@ class Blog extends Component {
                 </Routes> */}
                  <Routes>
                     <Route path="/" exact Component={Posts} />
+                </Routes>
+                <Routes>
+                    <Route path="/new-post" exact Component={NewPost} />
                 </Routes>
             </div>
         );
