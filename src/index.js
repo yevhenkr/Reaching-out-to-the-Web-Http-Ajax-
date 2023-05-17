@@ -11,7 +11,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 axios.interceptors.request.use(request => {
     console.log(request);
-    //Edit request config
+    // Edit request config
     return request;
 }, error => {
     console.log(error);
@@ -27,6 +27,5 @@ axios.interceptors.response.use(response => {
     return Promise.reject(error);
 });
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render( <App />, document.getElementById( 'root' ) );
 registerServiceWorker();
