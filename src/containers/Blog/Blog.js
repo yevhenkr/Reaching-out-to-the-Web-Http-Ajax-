@@ -15,7 +15,7 @@ class Blog extends Component {
                     <nav>
                         <ul>
                             <li><NavLink
-                                to="/posts/"
+                                to="/"
                                 exact
                                 activeClassName="my-active"
                                 activeStyle={{
