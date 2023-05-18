@@ -30,6 +30,7 @@ class FullPost extends Component {
     }
 
     deletePostHandler = () => {
+        //if unauth=> this.prop.history.replace('/posts');
         axios.delete('/posts/' + this.props.match.params.id)
             .then(response => {
                 console.log(response);
